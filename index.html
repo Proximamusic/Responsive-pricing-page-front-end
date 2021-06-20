@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+ <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+  <title>Product Pricing page</title> 
+</head>
+<body>
+<div class="display">
+  <h1>Our  Pricing</h1>
+
+
+  <div class="grid">
+    <h3>Monthly</h3>
+    <label  class="toggle">
+      <input class="toggle-input"type="checkbox" >
+    </label>
+    <h3>Annually</h3>
+  </div>
+    
+    
+  <div class="container">
+    <div class="cards ">
+      <h3 class="card-heading">Basic</h3>
+      <p class="basic">&dollar;<span>19.99</span></p>
+     
+      <hr>
+      500 GB Storage
+      <hr>
+      2 Users Allowed
+      <hr>
+      Send up to 3 GB
+      <hr>
+      <div class="button"><h3>LEARN MORE</h3></div>
+    </div>
+    <div class="cards ">
+      <h3 class="card-heading">Professional</h3>
+    <p class="pro">&dollar;<span>24.99</span></p>
+    
+    <hr>
+    1 TB Storage
+    <hr>
+    5 Users Allowed
+    <hr>
+    Send up to 10 GB
+    <hr>
+    <div class="button button-2"><h3>LEARN MORE</h3></div>
+    </div>
+    <div class="cards ">
+      <h3 class="card-heading">Master</h3>
+      <p class="master">&dollar;<span>39.99</span></p>
+      
+      <hr>
+      2 TB Storage
+      <hr>
+      10 Users Allowed
+      <hr>
+      Send up to 20 GB
+      <hr>
+      <div class="button "><h3>LEARN MORE</h3></div>
+    </div>
+  </div>
+
+</div>
+ <script>
+   document.querySelector(".toggle-input").addEventListener("click", function()
+   {
+    var cost = document.querySelectorAll("span");
+    if (cost[0].innerHTML === "19.99") {
+    cost[0].innerHTML = "199.99";
+  } else {
+    cost[0].innerHTML = "19.99";
+  }
+  if (cost[1].innerHTML === "24.99") {
+    cost[1].innerHTML = "249.99";
+  } else {
+    cost[1].innerHTML = "24.99";
+  }
+  if (cost[2].innerHTML === "39.99") {
+    cost[2].innerHTML = "399.99";
+  } else {
+    cost[2].innerHTML = "39.99";
+  }
+
+
+  });
+ </script>
+</body>
+</html>
